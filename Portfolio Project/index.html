@@ -32,6 +32,7 @@
                 <p>Hi! I'm William (I also go by Will!). I have a background in Sales and Analytics with a Bachelors Degree in Criminology and a Masters Degree in Business Administration. I started my web development journey in January of 2021 and have continued to learn, build, and grow. I love the passion I've developed for coding and am excited to pursue a career in this space and build up my skills.</p>
                 <p>My portfolio of projects I've worked on and skills I possess are listed below:</p>
                 </div>
+                <input onclick="darkMode()" ondblclick="lightMode()" type="button" id="dark-light" value="Dark Mode">
                 <img src="./resources/images/Professional Headshot.jpg" alt="Picture of William Ross">
             </div>
         </section>
@@ -104,6 +105,18 @@ function divide() {
   var result = num1 / num2;
   document.getElementById("result").innerHTML = result;
 }  
+
+let darkMode = function () {
+    let backGround = document.body.style.backgroundColor = 'black'
+    let words = document.body.style.color = 'white'
+    let light = document.getElementById('dark-light').value = 'Light Mode'
+}
+
+let lightMode = function () {
+    let backGround = document.body.style.backgroundColor = 'white'
+    let words = document.body.style.color = 'black'
+    document.getElementById('dark-light').value = 'Dark Mode'
+}
     </script>
 </body>
 </html>

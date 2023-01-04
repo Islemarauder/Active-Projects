@@ -81,6 +81,10 @@ nav h2 {
     }
 }
 
+#dark-light {
+    margin: 2%;
+}
+
 /* Projects */
 
 #projects {
@@ -138,4 +142,11 @@ ul img {
 #skills li {
     margin-left: 10%;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #skills {
+        display: flex;
+        flex-direction: column;
+    }
 }

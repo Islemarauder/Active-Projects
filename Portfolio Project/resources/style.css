@@ -1,0 +1,152 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header & Nav */
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+nav li {
+    margin: 5%;
+}
+
+nav h2 {
+    margin-left: 5%;
+}
+/* About Me */
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-text-container {
+    width: 50%;
+    max-width: 600px;
+    margin: 5%;
+}
+
+.about-me-text-container h2 {
+    margin-left: 20%;
+}
+
+.about-me-container img {
+    min-width: 20%;
+    min-height: 20%;
+    margin-right: 10%;
+    margin-top: 3%;
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
+#dark-light {
+    margin: 2%;
+}
+
+/* Projects */
+
+#projects {
+    display: inline;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#projects li {
+    list-style: disc;
+    width: 50%;
+    max-width: 600px;
+    margin: 5%;
+    line-height: 0.5rem;
+}
+
+
+#projects h2 {
+    margin-left: 20%;
+}
+
+
+#projects span {
+    width: 50%;
+    max-width: 600px;
+    margin: 5%;
+}
+
+#projects ul {
+    align-items: center;
+}
+
+ul img {
+    max-width: 100px;
+    max-height: 100px;
+    float: right;
+}
+
+/* Skills */
+
+#skills {
+    display: inline;
+    margin-top: 10%;
+}
+
+#skills h2 {
+    margin-left: 20%;
+}
+
+#skills ul {
+    display: flex;
+    align-items: center;
+}
+
+#skills li {
+    margin-left: 10%;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #skills {
+        display: flex;
+        flex-direction: column;
+    }
+}
